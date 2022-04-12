@@ -1,0 +1,23 @@
+2022-04-11 22:52:33,950 | Menu principal
+2022-04-11 22:52:36,244 | Entrada '1', Menu -> anadir
+2022-04-11 22:53:04,828 |  Palabra 'primera secuencia' agregada correctamente
+2022-04-11 22:53:11,678 |  Palabra 'segunda...' agregada correctamente
+2022-04-11 22:53:31,154 |  Palabra 'otra' agregada correctamente
+2022-04-11 22:53:37,326 |  Palabra '4 en total' agregada correctamente
+2022-04-11 22:53:41,233 |  Entrada tecla ctrl+c o Delete, anadir -> menu
+2022-04-11 22:53:46,503 | Entrada '2', Menu -> Comparar
+2022-04-11 22:53:53,926 |  Entrada tecla ctrl+c o Delete, comparar -> menu
+2022-04-11 22:53:55,450 | Entrada '1', Menu -> anadir
+2022-04-11 22:54:07,531 |  Palabra 'otra' agregada correctamente
+2022-04-11 22:54:09,062 |  Entrada tecla ctrl+c o Delete, anadir -> menu
+2022-04-11 22:54:09,920 | Entrada '2', Menu -> Comparar
+2022-04-11 22:54:14,856 |  Entrada '1', palabra 'segunda...' seleccionada
+2022-04-11 22:54:15,757 |  Entrada '4', palabra 'otra' seleccionada
+2022-04-11 22:54:15,764 |  Comparando 'segunda...' y 'otra', son diferentes
+2022-04-11 22:54:29,442 |  Entrada '2', palabra 'otra' seleccionada
+2022-04-11 22:54:30,281 |  Entrada '4', palabra 'otra' seleccionada
+2022-04-11 22:54:30,287 |  Comparando 'otra' y 'otra', son iguales
+2022-04-11 22:54:35,667 |  Entrada 'l' no valida.
+2022-04-11 22:54:42,024 |  Entrada tecla ctrl+c o Delete, comparar -> menu
+2022-04-11 22:54:49,199 | Menu principal
+2022-04-11 22:55:01,379 | Entrada 'q', terminar programa
