@@ -1,4 +1,4 @@
-# T1-ESP ver1.0
+# T1-ESP ver2.1
 #=== Generales ===
 # Logs
 import logging
@@ -31,9 +31,14 @@ def seleccionarPalabra(cantidad=2):
     while len(palabraSel) < cantidad:
             try:
                 index = input("Ingrese N° lista de "+ str(len(palabraSel)+1) +" a comparar (tecla ctrl+c, Delete para volver): ")
+                index = index.replace(",",".")
+                index = float(index)
                 index = int(index) #Separado de input para guradar valor de index por si existe error
-                palabraSel.append(PILA[index])
-                crearLog(" Entrada '{N}', palabra '{p}' seleccionada".format(N=index, p=PILA[index]))
+                if (index<0) or (index>len(PILA)):
+                    raise ValueError
+                else:
+                    palabraSel.append(PILA[index])
+                    crearLog(" Entrada '{N}', palabra '{p}' seleccionada".format(N=index, p=PILA[index]))
             except (ValueError, IndexError):
                 crearLog(" Entrada '{N}' no valida.".format(N=index))
                 continue
@@ -79,6 +84,10 @@ def anadir():
     # Proceso para anadir a pila y a log, salir con teclas ctrl+c o Delete
     try:
         palabra = str(input("Ingrese secuencia de caracteres para guardar (tecla ctrl+c o Delete para volver):\n > "))
+        palabra = palabra.strip()
+        if palabra == "":
+            crearLog("String vacio no valido")
+            anadir()
         PILA.append(palabra)
         logText = " Palabra '" + palabra + "' agregada correctamente"
         guardado = crearLog(logText)

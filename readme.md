@@ -1,4 +1,4 @@
-# Tarea 1 INF331 - Pruebas de software - Ver1.0 ESP | Ver2.0 ENG
+# Tarea 1 INF331 - Pruebas de software - Ver2.1 ESP | Ver2.1 ENG
 
 ## Descripción
 
@@ -37,6 +37,8 @@ Para contribuir existen varias opciones:
 2. Generación de [*Issues*](https://github.com/J122016/Tarea-1-INF331-UTFSM/issues) para dar conocimiento de un problema/incidencia detectado o añadir mejoras.
    
 3. Para consultas generales relacionadas no dude en contactar, mail: [javier.torresr@sansano.usm.cl](malito:javier.torresr@sansano.usm.cl) 
+
+- Special thanks to Sinéad Eriksson to find first issues with tests cases that helped to improve ver1.0
 
 ## Licencia
 

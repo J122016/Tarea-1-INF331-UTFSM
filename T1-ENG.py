@@ -1,4 +1,4 @@
-# T1-ENG ver2.0
+# T1-ENG ver2.1
 #=== Generals ===
 # Logs
 import logging
@@ -31,7 +31,7 @@ def selectStringStack(amount=2):
     while len(selStrings) < amount:
             try:
                 index = input("Enter list N° of the "+ str(len(selStrings)+1) +" string to compare (keys ctrl+c, Delete to go back): ")
-                index.replace(",",".")
+                index = index.replace(",",".")
                 index = float(index) #Separates from input to save value of index if raise error int cast
                 index = int(index)
                 if (index<0) or (index>len(STACK)):
