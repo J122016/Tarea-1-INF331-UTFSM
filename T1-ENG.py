@@ -30,10 +30,15 @@ def selectStringStack(amount=2):
     selStrings = []
     while len(selStrings) < amount:
             try:
-                index = input("Enter list N° of the"+ str(len(selStrings)+1) +" string to compare (keys ctrl+c, Delete to go back): ")
-                index = int(index) #Separates from input to save value of index if raise error int cast
-                selStrings.append(STACK[index])
-                addToLog(" Input '{N}', string '{p}' selected".format(N=index, p=STACK[index]))
+                index = input("Enter list N° of the "+ str(len(selStrings)+1) +" string to compare (keys ctrl+c, Delete to go back): ")
+                index.replace(",",".")
+                index = float(index) #Separates from input to save value of index if raise error int cast
+                index = int(index)
+                if (index<0) or (index>len(STACK)):
+                    raise ValueError
+                else:
+                    selStrings.append(STACK[index])
+                    addToLog(" Input '{N}', string '{p}' selected".format(N=index, p=STACK[index]))
             except (ValueError, IndexError):
                 addToLog(" Input '{N}' invalid.".format(N=index))
                 continue
@@ -79,6 +84,10 @@ def add():
     # Process, adds string to stack and log file
     try:
         string = str(input("Enter the string to save (key ctrl+c or Delete to go back):\n > "))
+        string = string.strip()
+        if string == "":
+            addToLog("Invalid empty string")
+            add()
         STACK.append(string)
         logText = " Add '" + string + "' string successfully"
         ok = addToLog(logText)  # to do verify result
