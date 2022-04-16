@@ -1,4 +1,4 @@
-# Tarea 1 INF331 - Pruebas de software - Ver1.0
+# Tarea 1 INF331 - Pruebas de software - Ver1.0 ESP | Ver2.0 ENG
 
 ## Descripción
 
